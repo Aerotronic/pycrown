@@ -1,0 +1,17 @@
+{
+    "pipeline": [
+        "./data/meters/ground/tile_001.las",
+        {
+            "filename":"./data/DTM/DTM.tif",
+            "gdaldriver":"GTiff",
+            "output_type":"min",
+            "resolution":"0.5",
+            "radius": "0.7",
+            "type": "writers.gdal",
+            "data_type": "float32",
+            "nodata": "0"
+            
+
+        }
+    ]
+}
